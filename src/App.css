@@ -1,0 +1,157 @@
+/*Header*/
+.app-container {
+  min-height: 100vh;
+  background: rgb(16,147,136);
+  background: linear-gradient(90deg, rgba(16,147,136,1) 0%, rgba(128,198,192,1) 77%, rgba(255,255,255,1) 100%);
+  color: #ffffff;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: 100;
+  text-align: center;
+  height: 100px;
+  margin: 0;
+  padding-top: 45px;
+  box-sizing: border-box;
+}
+
+h3 {
+  width: 130px;
+  font-size: 16px;
+  font-weight: 100;
+  text-transform: uppercase;
+  text-decoration: underline;
+  margin-right: 10px;
+}
+
+p {
+  width: 450px;
+  font-size: 12px;
+  font-weight: 100;
+  text-transform: uppercase;
+  margin-right: 100px;
+}
+
+/*Animals*/
+.animal-container {
+  width: 100%;
+  height: 100px;
+  background: rgb(16,147,136);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0 20px 0;
+  padding: 10px 0 10px 0;
+ 
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50px;
+  opacity: 80%;
+  margin: 10px;
+}
+
+img:hover {
+  opacity: 60%;
+}
+
+img.happy-icon, img.sad-icon {
+  width: 30px;
+  height: 30px;
+  background: #ffffff;
+  opacity: 80%;
+}
+
+b {
+  display: block;
+  font-size: 11px;
+  width: 90px;
+}
+
+/*AnAnimal*/
+.animal-detail-container {
+  height: 100vh;
+  background: rgb(16,147,136);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.animal-detail-container img {
+  width: 80%;
+  height: 450px;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+.animal-detail-container .status {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.animal-detail-container .status button {
+  font-family: inherit;
+  width: 90px;
+  height: 39px;
+  background: #d35757;
+  color: #ffffff;
+  border: none;
+  border-radius: 3px;
+}
+
+.animal-detail-container img.happy-icon, .animal-detail-container img.sad-icon  {
+  width: 30px;
+  height: 30px;
+  background: #ffffff;
+  opacity: 80%;
+  border-radius: 50%;
+}
+
+.animal-detail-container .tooltip {
+  height: 85px;
+}
+
+.animal-detail-container .tooltip .tooltip-time, .animal-detail-container .tooltip .tooltip-time {
+  visibility: hidden;
+  font-size: 10px;
+  width: auto;
+  background-color: black;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 3px;
+  position: absolute;
+  z-index: 1;
+}
+
+.animal-detail-container .tooltip:hover .tooltip-time, .animal-detail-container .tooltip:hover .tooltip-time {
+  font-size: 10px;
+  visibility: visible;
+}
+
+.animal-detail-container h3 {
+  width: 90%;
+}
+
+.animal-detail-container p, .animal-detail-container b {
+  width: 80%;
+  margin: 10px 45px 10px 45px;
+}
+
+
+.animal-detail-container .tooltip-time {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
