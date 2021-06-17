@@ -5,6 +5,7 @@ import { Header } from './components/Header';
 import { Animals } from './components/Animals';
 import { AnAnimal } from './components/AnAnimal';
 import { PageNotFound } from './components/PageNotFound';
+import { Footer } from './components/Footer';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           </Route>
         </Switch>
       </Router>
+      <Footer></Footer>
     </div>
   );
 }
