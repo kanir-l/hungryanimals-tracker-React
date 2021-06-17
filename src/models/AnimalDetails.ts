@@ -8,6 +8,6 @@ export class AnimalDetails {
         public longDescription: string,
         public imageUrl: string,
         public isFed: boolean,
-        public lastFed: number 
+        public lastFed: Date
     ) {}
 }

@@ -1,4 +1,4 @@
-/*Header*/
+/*Header, Footer*/
 .app-container {
   min-height: 100vh;
   background: rgb(16,147,136);
@@ -21,14 +21,14 @@ h3 {
   width: 130px;
   font-size: 16px;
   font-weight: 100;
-  text-transform: uppercase;
   text-decoration: underline;
   margin-right: 10px;
 }
 
 p {
   width: 450px;
-  font-size: 12px;
+  font-size: 11px;
+  line-height: 16px;
   font-weight: 100;
   text-transform: uppercase;
   margin-right: 100px;
@@ -61,14 +61,29 @@ img {
 }
 
 img:hover {
-  opacity: 60%;
+  opacity: 90%;
 }
 
 img.happy-icon, img.sad-icon {
   width: 30px;
   height: 30px;
   background: #ffffff;
-  opacity: 80%;
+  opacity: 100%;
+}
+
+img.warming-icon {
+  width: 20px;
+  height: 20px;
+  opacity: 100%;
+  border-radius: inherit;
+}
+
+img.warming-icon-hidden {
+  visibility: hidden;
+  width: 20px;
+  height: 20px;
+  opacity: 100%;
+  border-radius: inherit;
 }
 
 b {
@@ -79,7 +94,7 @@ b {
 
 /*AnAnimal*/
 .animal-detail-container {
-  height: 100vh;
+  min-height: 100vh;
   background: rgb(16,147,136);
   display: flex;
   flex-direction: column;
@@ -88,7 +103,7 @@ b {
 
 .animal-detail-container img {
   width: 80%;
-  height: 450px;
+  height: 300px;
   border-radius: 10px;
   margin-top: 30px;
 }
@@ -104,8 +119,18 @@ b {
   font-family: inherit;
   width: 90px;
   height: 39px;
-  background: #d35757;
-  color: #ffffff;
+  background: #ffffff;
+  color: #109388;
+  border: none;
+  border-radius: 3px;
+}
+
+.animal-detail-container .status button:disabled {
+  font-family: inherit;
+  width: 90px;
+  height: 39px;
+  background: #868686;
+  color: #666666;
   border: none;
   border-radius: 3px;
 }
@@ -114,19 +139,19 @@ b {
   width: 30px;
   height: 30px;
   background: #ffffff;
-  opacity: 80%;
+  opacity: 100%;
   border-radius: 50%;
 }
 
 .animal-detail-container .tooltip {
-  height: 85px;
+  height: 88px;
 }
 
 .animal-detail-container .tooltip .tooltip-time, .animal-detail-container .tooltip .tooltip-time {
   visibility: hidden;
   font-size: 10px;
   width: auto;
-  background-color: black;
+  background-color: #000000;
   color: #ffffff;
   padding: 10px;
   border-radius: 3px;
@@ -145,13 +170,12 @@ b {
 
 .animal-detail-container p, .animal-detail-container b {
   width: 80%;
+  line-height: 16px;
   margin: 10px 45px 10px 45px;
 }
-
 
 .animal-detail-container .tooltip-time {
   position: relative;
   display: inline-block;
   border-bottom: 1px dotted black;
 }
-
