@@ -64,10 +64,9 @@ export const Animals = () => {
 
     let liTags = animals.map((animal) => {
         return (<li key={animal.id}>
+            <Link to={"/AnAnimal/" + animal.id } className="animal-link" >
             <div className = "animal-container">
-                <Link to={"/AnAnimal/" + animal.id }>
-                    <img src={animal.imageUrl} alt=""  /> 
-                </Link>
+                <img src={animal.imageUrl} alt=""  /> 
                 <h3>{animal.name}</h3>
                 <p>{animal.shortDescription}</p>
                 {currentTime - Number(animal.lastFed) > 14400000 ? 
@@ -85,6 +84,7 @@ export const Animals = () => {
                     </div> 
                 }</b> 
             </div>
+            </Link>
         </li>)
     })
 
